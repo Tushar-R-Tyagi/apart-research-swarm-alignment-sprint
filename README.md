@@ -51,6 +51,8 @@ Every arm uses project 1's `memory_one` setup: patient zero has the rule in its 
 | `memory_one_mgr` | registered | on the board before ticket 3, before anyone has cheated (prevention) | [`swarm_spread_intervention.ipynb`](swarm_spread_intervention.ipynb) |
 | `memory_one_react` | **exploratory**, designed after the registered results | once, before the ticket after the first hack (from ticket 3 on) | [`swarm_spread_reactive.ipynb`](swarm_spread_reactive.ipynb) (DeepSeek); [`swarm_spread_reactive_luna_haiku.ipynb`](swarm_spread_reactive_luna_haiku.ipynb) (Luna, Haiku and Qwen; Qwen ran control and reactive together) |
 
+**Qwen run:** `swarm_spread_reactive_luna_haiku.ipynb` with two local edits: `"qwen": ["memory_one", "memory_one_react"]` added to `CONDITIONS`, and `RUN_LABEL = "SPRINT-spread-reactive2-qwen"`.
+
 **Results.**
 - **Registered test (S1):**
   - Spread to unseeded teammates on tickets 3–10: 0.18 vs 0.00 in DeepSeek and 0.37 vs 0.00 in Luna.
